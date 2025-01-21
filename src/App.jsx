@@ -47,8 +47,8 @@ export default function CardWithForm() {
   return (
     <>
       <Header />
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 pt-32">
-        <Card className="py-2 text-center ">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 pt-3">
+        <Card className="py-2 text-center bg-blue-400 hover:shadow-lg transition-shadow duration-300">
           <div>
             <img src={Image1} className="" />
           </div>
@@ -73,7 +73,7 @@ export default function CardWithForm() {
           </div>
         </Card>
 
-        <Card className="py-2 text-center -black">
+        <Card className="py-2 text-center black">
           <img src={Image1} className="" />
           <div className=" flex flex-col gap-5">
             <h1>Sony Alpha DSLR Camera</h1>
@@ -97,7 +97,7 @@ export default function CardWithForm() {
         </Card>
 
         <Card className="py-2 text-center -black">
-          <img src={Image1} className="" />
+          <img src={Image1}  />
           <div className=" flex flex-col gap-5">
             <h1>Sony Alpha DSLR Camera</h1>
             <div
@@ -161,9 +161,9 @@ export default function CardWithForm() {
         </Card>
       </div>
 
-      <h1 class="py-2 text-4xl font-bold"> Baeutiful Image Gallery</h1>
+      <h1 class="py-2 text-4xl font-bold text-center"> Baeutiful Image Gallery</h1>
 
-      {/* <div class="container mx-auto">
+       <div class="container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="-blue-500 border rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-tranform duration-30">
             <img
@@ -180,7 +180,7 @@ export default function CardWithForm() {
           <img src={Image2} alt="Laith Malinga photo" srcset="" />
           <img src={Image2} alt="Laith Malinga photo" srcset="" />
         </div>
-      </div> */}
+      </div> 
     </>
   );
 }
